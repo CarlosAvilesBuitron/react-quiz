@@ -1,0 +1,90 @@
+.footer{
+    margin-top: 0px !important;
+    
+    .logosBlock{
+        padding-top:20px;
+    }
+
+    .GuideStar {width: 80px; height: 59px; margin-right: 10px; vertical-align: top;}
+    .Seal {width: 41px; height: 71px; margin-right: 10px;vertical-align:-6px;}
+    .TopRated {width: 86px; height: 67px; vertical-align: -3px;}
+}
+
+
+
+ @media (max-width: 640px){
+        footer nav {
+            display: none;
+        }
+        
+        .l-region--footer .has-logo{
+            margin-left: 0px;
+            margin-right: 0px;
+            background: none;
+            text-align: center;
+        }
+        
+        .block__content, .social-links-flat{
+            text-align: center;
+        }
+}
+
+@media(max-width:600px){
+    
+           .footer {
+            background-position: center -35px;
+            border: none;
+            height: auto;
+            min-height: 0;
+            text-align: center;
+            padding: 20px;
+            margin-top: 0px !important;
+        }
+        
+        .spr-sprite,
+        .spr-email,
+        .spr-facebook,
+        .spr-flickr,
+        .spr-foursquare,
+        .spr-google-plus,
+        .spr-instagram,
+        .spr-menu-active,
+        .front .menu-main a:after,
+        .not-front .l-region--navigation .menu-main a.active-trail:after,
+        .spr-pinterest,
+        .spr-podcast,
+        .spr-red-arrow,
+        .spr-rss,
+        .spr-rule-222-shaded,
+        .rail-second .block:after,
+        .spr-rule-260-shaded,
+        .panel-2col-biased .panel-col-last .panel-pane:after,
+        .spr-rule-450-shaded,
+        .rule-after-450:after,
+        .rule-after-450-nopad:after,
+        .spr-rule-full-arrow,
+        .pane-corporate-partners-panel-pane-1:after,
+        .pane-corporate-partners-panel-pane-2:after,
+        .tiles:after,
+        .spr-rule-full-shaded,
+        .not-front .content:after,
+        .breadcrumb:before,
+        .front .panel-2col-biased .center-wrapper:after,
+        .discover-form .pane-content:after,
+        #discover-form .pane-content:after,
+        .panel-home .white-1:before,
+        .panel-home .panel-row-landscape:before,
+        .panel-home .white-2 .panel-pane:first-child:after,
+        .spr-sca-logo-reversed,
+        .l-region--footer .has-logo:after,
+        .spr-tile_bg,
+        .tiles li,
+        .spr-tumblr,
+        .spr-twitter,
+        .spr-yes,
+        .panel-home .panel-row-bottom .pane-title,
+        .spr-youtube {
+            background:none!important;
+            
+        } 
+}

@@ -1,0 +1,60 @@
+.rkd-overlay-full {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10100;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.rkd-overlay-full *{
+    box-sizing: border-box;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+
+.color-mix{
+    background: -webkit-linear-gradient(-90deg, #7cc349 0%, #439ecb 100%);
+    background: -moz-linear-gradient(-90deg, #7cc349 0%, #439ecb 100%);
+    background: -o-linear-gradient(-90deg, #7cc349 0%, #439ecb 100%);
+    background: -ms-linear-gradient(-90deg, #7cc349 0%, #439ecb 100%);
+    background: linear-gradient(180deg, #7cc349 0%, #439ecb 100%);
+}
+
+.clearAll{
+    clear: both;
+}
+
+.color-mix-horizontal{
+    background: -webkit-linear-gradient(0deg, #7cc349 0%, #439ecc 100%);
+    background: -moz-linear-gradient(0deg, #7cc349 0%, #439ecc 100%);
+    background: -o-linear-gradient(0deg, #7cc349 0%, #439ecc 100%);
+    background: -ms-linear-gradient(0deg, #7cc349 0%, #439ecc 100%);
+    background: linear-gradient(90deg, #7cc349 0%, #439ecc 100%);
+}
+
+.no-pad{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.no-margin{
+    margin-left: 0px !important;
+    margin-right: 0px !important; 
+}
+
+@mixin gradient($degrees, $linearDegrees, $firstColor, $percent, $secondColor, $secondPercent) {
+    background: -webkit-linear-gradient($degrees, $firstColor $percent, $secondColor $secondPercent) !important;
+    background: -moz-linear-gradient($degrees, $firstColor $percent, $secondColor $secondPercent) !important;
+    background: -o-linear-gradient($degrees, $firstColor $percent, $secondColor $secondPercent) !important;
+    background: -ms-linear-gradient($degrees, $firstColor $percent, $secondColor $secondPercent) !important;
+    background: linear-gradient($linearDegrees, $firstColor $percent, $secondColor $secondPercent) !important;
+}
+
+@media (max-width: 640px){
+        .no-pad{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+}

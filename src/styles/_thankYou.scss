@@ -1,0 +1,226 @@
+.thankYou{
+    
+    //Thank You Page Headline
+    .quiz-headline{
+        padding: 15px;
+            h1{
+                font-size: 50px;
+                font-weight: 600;
+                letter-spacing: 1.2px;
+                margin: 2px 0 2px;
+                color: #fff;
+            }
+            p{
+                font-size: 28px;
+                margin: 0px;
+            }
+    }
+    
+    //Thank You Quiz Body
+    .quizBody{
+        padding-top: 12px !important;
+        padding-bottom: 50px !important;
+        
+        .result-headline{
+                font-size: 50px;
+                font-weight: bold;
+                text-transform: uppercase;
+                padding-top: 10px;
+                margin: 20px auto;
+                box-shadow: 0px 0px 8px 0px rgba(1, 1, 1, 0.27);
+            }
+        .result-body{
+                margin: 30px auto 20px;
+                color: #343434;
+                font-size: 20px;
+                padding: 0px 110px;
+                
+                p{
+                    margin: 0;
+                }
+        }
+        .result-message{
+                font-size: 30px;
+                color: #439ecc;
+                margin: 30px auto;
+                padding: 0px 80px;
+                
+                p{
+                    font-weight: 600;
+                    margin: 0;
+                }
+        }
+        
+        .facebook, .twitter{
+                margin: 20px 10px;
+        }
+        
+        &:before{
+                content: ' ';
+                position: absolute;
+                width: 30px;
+                height: 0;
+                left: -120px;
+                top: 52px;
+                border-width: 40px 60px;
+                border-style: solid;
+                border-color: #7cc24a #7cc24a #7cc24a transparent;
+        }
+        
+        &:after{
+                content: ' ';
+                position: absolute;
+                width: 30px;
+                height: 0;
+                right: -120px;
+                top: 52px;
+                border-width: 40px 60px;
+                border-style: solid;
+                border-color:  #439ecc transparent #439ecc  #439ecc;
+        }
+            
+    }
+    
+    
+    //Thank You Tips Section 
+    .tips{
+        border-radius: 10px;
+        padding: 30px;
+        background-color: #f6f6f6;
+        margin-bottom: 60px;
+        
+        h2{
+            font-size: 22px;
+            font-weight: bold;
+            margin: 40px 0 10px;
+            letter-spacing: 2px;
+            color:#343434;
+        }
+        
+        ul{
+            padding-left: 12px;
+            
+            li{
+                margin: 10px 0;
+                color: #7cc349;
+                line-height: 28px;
+                
+                span{
+                    color:#343434;
+                }
+            }
+        }
+        
+        hr{
+            border: 0; 
+            height: 6px;
+            @include gradient(0deg, 90deg, #7cc349, 0%, #439ecc, 100%);
+            width: 52%;
+            float: left;
+            margin: 0px 0px 12px;
+            position: inherit;
+        }
+        
+        
+    }
+    
+    .share{
+        h2{
+            font-size: 30px;
+            color: #9dd078;
+            font-weight:600;
+        }
+    }
+    
+    //Thank You Donate Section
+    .donate{
+            background-color: #7cc349;
+            border-radius: 10px;
+            padding: 30px 40px 30px 30px;
+            color: #fff;
+            text-align: left;
+            background-image: url(https://secure2.convio.net/scai/images/content/pagebuilder/LP-TY-BG.png);
+            background-size: cover;
+            background-position: center center;
+            min-height: 1000px;
+            margin-bottom: 30px;
+            
+            img{
+                margin: 0px 0 20px;
+            }
+            
+            ul{
+                padding-left: 20px;
+                
+                li{
+                    line-height: 26px;
+                }
+            }
+            
+            p{
+                font-size: 15px;
+                margin: 10px 0;
+                font-weight: 200;
+            }
+            
+            .button{
+                margin: 30px auto;
+                display: block;
+                background-color: #fff;
+                width: 80%;
+                color:#449ecb;
+                font-size: 30px;
+                text-transform: uppercase;
+                font-weight: 600;
+                text-decoration: none;
+                
+                &:hover, &:active {
+                    color:#7cc349;
+                }
+            }
+    }
+    
+    
+}
+
+
+
+@media (max-width: 960px){
+    .thankYou .donate .button{
+        font-size: 22px;
+    }
+}
+
+@media(max-width:600px){
+    
+    .thankYou{
+        
+        .quiz-headline {
+            h1{ font-size:28px; }
+        }
+        
+        .quizBody{
+            .result-headline{
+                font-size:28px;
+            }
+            
+            .result-message{
+                padding: 10px;
+                font-size: 22px;
+            }
+            
+            .result-body{
+                padding: 10px;
+            }
+        }
+        
+        
+        
+    }
+    
+ 
+    .thankYou .tips hr, .thankYou .donate .button{
+        width: 100%;
+    }
+    
+}

@@ -1,0 +1,93 @@
+.questionSingle{
+    padding-left: 40px;
+    padding-right: 40px;
+    
+    &:first-child {
+       padding: 12px 20px 0px !important;
+    }
+    
+    h3{
+        color:  #449eca;
+        font-size: 48px;
+        line-height: 50px;
+        font-weight: 600;
+        padding: 0 20px;
+        text-transform: none;
+        margin: 10px 0 0;
+    }
+    
+    h4{
+        color:  #449eca;
+        font-size: 27px;
+        line-height: 35px;
+        font-weight: 200;
+        margin: 10px 0 0;
+    }
+    
+    input{
+        display: none;
+    }
+    
+    label{
+        display: block;
+        width: 100%;
+        min-height: 50px;
+        border-radius: 10px;
+        padding:12px 10px;
+        text-align: center;
+        border: 1px solid #343434;
+        background-color: transparent;
+        line-height: 22px;
+        color: #343434;
+        margin: 16px 0;
+    }
+    
+    .active .value{
+        color: #fff;
+    }
+    
+    .value{
+        font-size: 30px;
+        line-height: 18px;
+        font-weight: bold;
+        color: #b7b7b7;
+        padding-top: 3px;
+        display: inline-block;
+    }
+    
+    .active{
+        border: none !important;
+        @include gradient(0deg, 90deg, #7cc349, 0%, #439ecc, 100%);
+        font-weight: bold !important;
+        color: #fff !important;
+    }
+    
+    .inactive{
+        color:#343434;
+    }
+    
+    .quizAnswerText{
+        padding-top:4px;
+    }
+}
+
+
+ @media (max-width: 960px){
+     
+     .questionSingle h3{
+        font-size: 22px;
+        line-height: 26px;
+        padding: 0px;
+        margin: 0;
+    }
+
+}
+
+@media(max-width: 600px){
+    
+    .questionSingle h4{
+        line-height: 26px;
+        font-size: 18px;
+    }
+    
+}
