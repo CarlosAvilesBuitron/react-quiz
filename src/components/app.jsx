@@ -24,7 +24,7 @@ class App extends React.Component{
         selectB: 0,
         selectC: 0,
         quizDone: false,
-        winner: 'a',
+        winner: 'c',
         questions: [
             {
                 id:1,
@@ -149,17 +149,17 @@ class App extends React.Component{
                 choices: [
                     {
                         id: "A",
-                        text: "Pretty much never. I just don't remember.",
+                        text: "Ride solo in my car; it's easier and more relaxing that way.",
                         value: "a",
                     },
                     {
                         id: "B",
-                        text: "About once a month I take my paper waste to the recycling bin.",
+                        text: "Carpool with my friends. It's more fun to be together!",
                         value: "b",
                     },
                     {
                         id: "C",
-                        text: "Every day. I'm very conscious about what I'm throwing out.",
+                        text: "Walk, ride my bike, or take public transportation if at all possible",
                         value: "c",
                     }
                 ]

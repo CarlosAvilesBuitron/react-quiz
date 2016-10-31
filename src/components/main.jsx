@@ -10,10 +10,15 @@ require('../main.scss');
 (function($) {
     $(document).ready(function() {
         
+        let url = 'https://secure2.convio.net/scai/images/content/pagebuilder/LP-BG-Quiz.jpg';
+        let desc = 'Find out the size of your carbon footprint when you take The Student Conservation Association\'s Conservation QUIZ!';
+   
+        $("meta[property=og:image]").attr("content", url);
+        $("meta[property=og:description]").attr("content", desc);
+        
         $('.page').hide();
         
         let popup = $('<div id="quiz" class="quiz"></div>');
-        //let iframeHidden = $('<iframe id="iframeLoader" name="iframeLoader" class="frameLoader"></iframe>');
         
         $('body').prepend(popup);
     

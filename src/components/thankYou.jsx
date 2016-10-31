@@ -15,7 +15,7 @@ constructor(props){
         let winnerMessage;
         let winnerBody;
         
-        if(this.props.winner == 'a'){
+        if(this.props.winner == 'c'){
             winner = <p>Super Green</p>;
             winnerMessage = <p>You are the poster child of conservation, so congratulations for what you're doing to minimize your carbon footprint.</p>;
             winnerBody = <p>Through your conscientious choices, you're helping and not hurting the environment. Keep up the good work, and be sure to encourage your friends to do the same when it comes to conserving and protecting our natural resources.</p>;
@@ -25,7 +25,7 @@ constructor(props){
             winnerMessage = <p>You're the Goldilocks of conservation with a carbon footprint that's not too big and not too small.</p>;
             winnerBody = <p>While you’re trying to help make a difference when you can, there’s more you can do. By educating yourself, you can learn how to make a more tangible impact in the world around you. Knowledge is power!</p>;
             
-        } else if(this.props.winner == 'c'){
+        } else if(this.props.winner == 'a'){
             winner = <p>Not so Green</p>;
             winnerMessage = <p>Your carbon footprint is getting a little too big for its britches.</p>;
             winnerBody = <p>But despite that, there's good news. You can become greener! And it doesn't have to be an overwhelming process. By making small changes in your lifestyle choices -– one day at a time -- you can become greener. </p>;
@@ -98,7 +98,7 @@ constructor(props){
                                 <p>No matter your green level or age, you can always do your part to help reduce carbon footprints in our world. </p>
                                 <p>What's more, you can also help <strong>The Student Conservation Association</strong> (SCA) continue the work of serving our planet and helping build the next generation of conservation leaders. </p>
                                 
-                                <a href="http://members.thesca.org/site/Donation2?df_id=8540&8540.donation=form1" className="btn btn-lg button">Donate Now</a>
+                                <a href="http://members.thesca.org/site/Donation2?df_id=8540&8540.donation=form1" target="_blank" className="btn btn-lg button">Donate Now</a>
                                 
                                 <p>Each year we motivate and deploy thousands of young people (age 15 to young adults) from all 50 states and socio-economic backgrounds who care passionately about improving their natural world. </p>
                                 

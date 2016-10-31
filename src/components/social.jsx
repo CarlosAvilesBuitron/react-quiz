@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+
 let url;
 let purl = 'https://www.thesca.org/conservation-quiz';
 let pTitle = 'Conservation Quiz | SCA';
 let imgPath = 'https://secure2.convio.net/scai/images/content/pagebuilder/LP-BG-Quiz.jpg';
 let twitterVia = 'the_sca';
 let desc;
+
 
 let Share = {
     
@@ -41,15 +43,15 @@ constructor(props){
 
     _facebook(e){
         
-        e.preventDefault();
         
-        if(this.props.winner == 'a'){
+        if(this.props.winner == 'c'){
             desc = 'Super Green: You are the poster child of conservation, so congratulations for what you\'re doing to minimize your carbon footprint.';
         } else if(this.props.winner == 'b'){
             desc = 'Sort of Green: You\'re the Goldilocks of conservation with a carbon footprint that\'s not too big and not too small.';
         } else {
            desc = 'Not so Green: Your carbon footprint is getting a little too big for its britches.'; 
         }
+        
         
         Share.facebook(purl,pTitle,imgPath,desc);
     }
@@ -59,7 +61,7 @@ constructor(props){
         
         e.preventDefault();
         
-        if(this.props.winner == 'a'){
+        if(this.props.winner == 'c'){
             desc = 'Super Green: You are the poster child of conservation.';
         } else if(this.props.winner == 'b'){
             desc = 'Sort of Green: You\'re the Goldilocks of conservation.';
@@ -78,7 +80,7 @@ constructor(props){
         return(
             <div className="col-md-12 share">
                 <h2>Share your results with your friends</h2>
-                <a  onClick={this._facebook.bind(this)} href="http://www.google.com" className="facebook" ><img src="https://secure2.convio.net/scai/images/content/pagebuilder/Quiz-Facebook.png" alt="Share on Facebook"/></a>
+                <a  onClick={this._facebook.bind(this)} className="facebook" ><img src="https://secure2.convio.net/scai/images/content/pagebuilder/Quiz-Facebook.png" alt="Share on Facebook"/></a>
                 <a  onClick={this._twitter.bind(this)}  className="twitter"><img src="https://secure2.convio.net/scai/images/content/pagebuilder/Quiz-Twitter.png" alt="Share on Twitter"/></a>
             </div>
         );
