@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import cookie from 'react-cookie';
+const functionsImport = require ('../functions.js');
 
 import LandingPage from './landingPage.jsx';
 import QuizPage from './quizPage.jsx';
@@ -191,10 +192,17 @@ class App extends React.Component{
     };
 }
 
-    componentDidMount() {
-      console.log('Component DID MOUNT!');
-      if(cookie.load('formDone') == 'formDone'){
-          console.log('Form Was Done');
+    componentDidMount(){
+        
+      console.log('Quiz Ready');    
+        
+      if(functionsImport.urlParam('done')){
+          
+          if(cookie.load('formDone') && cookie.load('formDone') == 'formDone' && cookie.load('levelWinner')){
+                this.setState({winner: cookie.load('levelWinner')});
+                this.setState({mainProgress: 3});
+        }
+          
       }
    }
     

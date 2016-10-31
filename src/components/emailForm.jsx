@@ -15,7 +15,8 @@ class EmailForm extends React.Component{
         _finishForm();
         
         cookie.save('formDone' , 'formDone', { path: '/' });
-        
+        cookie.save('levelWinner', this.props.winner, { path: '/' });
+        window.close();
     }
     
     render(){
@@ -34,7 +35,7 @@ class EmailForm extends React.Component{
                     <input id="SURVEY_ID" name="SURVEY_ID" type="hidden" value="8787"/>
                 </form>
                 
-                <iframe id="iframeLoader" name="iframeLoader" className="frameLoader" src="http://members.thesca.org/site/Survey?ACTION_REQUIRED=URI_ACTION_USER_REQUESTS&SURVEY_ID=8787"></iframe>
+                <iframe id="iframeLoader" name="iframeLoader" className="frameLoader"></iframe>
                 
                 
             </div> 
