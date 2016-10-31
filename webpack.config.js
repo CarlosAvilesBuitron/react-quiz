@@ -8,7 +8,7 @@ module.exports = {
         main: ['./src/components/main.jsx']
     },
     output: {
-        filename: './public/bundle.js'
+        filename: './public/[name].js'
     },
     plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
