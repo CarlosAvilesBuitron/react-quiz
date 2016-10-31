@@ -198,10 +198,8 @@ class App extends React.Component{
         
       if(functionsImport.urlParam('done')){
           
-          if(cookie.load('formDone') && cookie.load('formDone') == 'formDone' && cookie.load('levelWinner')){
-                this.setState({winner: cookie.load('levelWinner')});
-                this.setState({mainProgress: 3});
-        }
+            window.close();
+            window.self.close();
           
       }
    }
