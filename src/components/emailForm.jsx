@@ -14,8 +14,7 @@ class EmailForm extends React.Component{
         
         _finishForm();
         
-        cookie.save('formDone' , 'formDone', { path: '/' });
-        cookie.save('levelWinner', this.props.winner, { path: '/' });
+        document.getElementById('QuizHolder').scrollIntoView();
     }
     
     render(){
