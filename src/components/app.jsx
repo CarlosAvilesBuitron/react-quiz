@@ -194,7 +194,7 @@ class App extends React.Component{
 
     componentDidMount(){
         
-      console.log('Quiz Ready');    
+      console.log('Quiz Ready v2.');    
         
       if(functionsImport.urlParam('done')){
           
