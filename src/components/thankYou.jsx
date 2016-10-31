@@ -38,7 +38,7 @@ constructor(props){
                     <div className="container">
                         <div className="row">
                             <div className="col-md-6">
-                                <img src="https://preview.c9users.io/carlosaviles1984/front-end-rkd/SCA/Quiz/Assets/LP-Logo-Quiz.png?_c9_id=livepreview1&_c9_host=https://ide.c9.io" alt="Logo" className="img-responsive"/>
+                                <img src="https://secure2.convio.net/scai/images/content/pagebuilder/LP-Logo-Quiz.png" alt="Logo" className="img-responsive"/>
                                 <span>The Student Conservation Association</span>
                             </div>
                         </div>
