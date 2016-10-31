@@ -1,16 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import cookie from 'react-cookie';
 
 class EmailForm extends React.Component{
         
     constructor(props){
         super(props);
     }
+
     
     _onSubmit(e){
         const {_finishForm} = this.props;
+        
         _finishForm();
-        document.getElementById('QuizHolder').scrollIntoView();
+        
+        cookie.save('formDone' , 'formDone', { path: '/' });
+        
     }
     
     render(){

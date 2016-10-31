@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import cookie from 'react-cookie';
 
 import LandingPage from './landingPage.jsx';
 import QuizPage from './quizPage.jsx';
@@ -10,6 +11,8 @@ import ThankYou from './thankYou.jsx';
 class App extends React.Component{
     constructor(props){
         super(props);
+        
+    
     
     
     this.state = {
@@ -187,6 +190,13 @@ class App extends React.Component{
         ]
     };
 }
+
+    componentDidMount() {
+      console.log('Component DID MOUNT!');
+      if(cookie.load('formDone') == 'formDone'){
+          console.log('Form Was Done');
+      }
+   }
     
     _progress(){
                 this.setState({mainProgress: this.state.mainProgress + 1});
@@ -207,8 +217,6 @@ class App extends React.Component{
     }
     
     _setQuizProgressNext(){
-        
-        
 
         if(this.state.quizProgress < this.state.questions.length){
             this.setState({quizProgress: this.state.quizProgress + 1});

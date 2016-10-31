@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './app.jsx';
 
+
 /* Style Sheet Import */
 require('../main.scss');
 
