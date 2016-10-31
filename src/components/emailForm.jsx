@@ -29,7 +29,7 @@ class EmailForm extends React.Component{
                     <input id="SURVEY_ID" name="SURVEY_ID" type="hidden" value="8787"/>
                 </form>
                 
-                <iframe id="iframeLoader" name="iframeLoader" className="frameLoader"></iframe>
+                
             </div> 
         );
     }
