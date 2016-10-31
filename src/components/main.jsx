@@ -12,9 +12,9 @@ require('../main.scss');
         $('.page').hide();
         
         let popup = $('<div id="quiz" class="quiz"></div>');
-        let iframeHidden = $('<iframe id="iframeLoader" name="iframeLoader" class="frameLoader"></iframe>');
+        //let iframeHidden = $('<iframe id="iframeLoader" name="iframeLoader" class="frameLoader"></iframe>');
         
-        $('body').prepend(popup).prepend(iframeHidden);
+        $('body').prepend(popup);
     
     });
 })(jQuery);
