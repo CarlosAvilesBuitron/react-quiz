@@ -16,7 +16,6 @@ class EmailForm extends React.Component{
         
         cookie.save('formDone' , 'formDone', { path: '/' });
         cookie.save('levelWinner', this.props.winner, { path: '/' });
-        window.close();
     }
     
     render(){
