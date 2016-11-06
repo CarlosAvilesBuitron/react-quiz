@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import cookie from 'react-cookie';
 
 class EmailForm extends React.Component{
         
@@ -30,13 +29,19 @@ class EmailForm extends React.Component{
         document.getElementById('QuizHolder').scrollIntoView();
     }
     
+    componentDidMount(){
+        
+      console.log('Form has rendered');    
+
+   }
+    
     render(){
     
         return(          
             <div className="emailForm" id="QuizForm">
                 <h2>You are done!</h2>
                 <p>Ready to see and share your results?</p>
-                <form action="http://members.thesca.org/site/Survey?ACTION_REQUIRED=URI_ACTION_USER_REQUESTS&SURVEY_ID=8787" method="post" target="iframeLoader" id="surveyForm" onSubmit={this._onSubmit.bind(this)} >
+                <form action="http://members.thesca.org/site/Survey?ACTION_REQUIRED=URI_ACTION_USER_REQUESTS&SURVEY_ID=8787" name="iframeLoaders1" target="iframeLoaders" method="post" id="surveyForm" onSubmit={this._onSubmit.bind(this)} >
                     <input id="cons_info_component" name="cons_info_component" type="hidden" value="t"/>
                     <input id="cons_mail_opt_in" name="cons_mail_opt_in" type="hidden" value="t"/>
                     <input type="email" name="cons_email" id="cons_email" placeholder="Your email address" onChange={this._onChange.bind(this)} />
@@ -46,10 +51,6 @@ class EmailForm extends React.Component{
                     <input id="denySubmit" name="denySubmit" alt="This field is used to prevent form submission by scripts." type="hidden"/>
                     <input id="SURVEY_ID" name="SURVEY_ID" type="hidden" value="8787"/>
                 </form>
-                
-                <iframe id="iframeLoader" name="iframeLoader" className="frameLoader"></iframe>
-                
-                
             </div> 
         );
     }

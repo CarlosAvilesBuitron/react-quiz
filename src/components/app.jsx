@@ -1,12 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import cookie from 'react-cookie';
-const functionsImport = require ('../functions.js');
-
 import LandingPage from './landingPage.jsx';
 import QuizPage from './quizPage.jsx';
 import Footer from './footer.jsx';
 import ThankYou from './thankYou.jsx';
+const functionsImport = require ('../functions.js');
 
 
 class App extends React.Component{

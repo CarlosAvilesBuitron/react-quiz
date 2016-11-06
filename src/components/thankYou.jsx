@@ -145,7 +145,7 @@ constructor(props){
                                 <hr/>
                                 <div className="clearAll"></div>
                                 <ul>
-                                    <li>No car, no problem! <span>Whether you hop on your bicycle, you can help reduce carbon emissions while getting some great physical exercise.</span></li>
+                                    <li>No car, no problem! <span>When you hop on your bicycle, you can help reduce carbon emissions while getting some great physical exercise.</span></li>
                                     
                                     <li>Group your errands into one day a week. <span>Plan out your route and try to keep your destinations as close together as possible.</span></li>
                                     

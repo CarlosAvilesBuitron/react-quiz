@@ -1,5 +1,3 @@
-
-
 exports.urlParam = (name) => {
     
     let results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
